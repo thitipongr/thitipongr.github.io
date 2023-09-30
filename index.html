@@ -6,10 +6,22 @@
   </head>
   <body>
     <nav>
-      <div onclick="scrollToId(`thitipongR`)" id="nav-home">THITIPONGR</div>
-      <div onclick="scrollToId(`about`)" id="nav-about">ABOUT</div>
-      <div onclick="scrollToId(`portfolio`)" id="nav-portfolio">PORTFOLIO</div>
-      <div onclick="scrollToId(`contact`)" id="nav-contact">CONTACT</div>
+      <div>
+        <div onclick="scrollToId(`thitipongR`)" id="nav-home">ThitipongR</div>
+      </div>
+
+      <div>
+        <div onclick="scrollToId(`about-skill`)" id="nav-about-skill">
+          SKILL
+        </div>
+        <div onclick="scrollToId(`about-exp`)" id="nav-about-exp">
+          EXPERIENCE
+        </div>
+        <div onclick="scrollToId(`portfolio`)" id="nav-portfolio">
+          PORTFOLIO
+        </div>
+        <div onclick="scrollToId(`contact`)" id="nav-contact">CONTACT</div>
+      </div>
     </nav>
 
     <div id="thitipongR" class="section">
@@ -21,23 +33,39 @@
         <p>now studying to become full-stack developer</p>
       </div>
       <div id="pic">
-        <img alt="My Photo" src="picture.jpg" />
+        <img alt="My Photo" src="pic/picture.jpg" />
       </div>
     </div>
 
-    <div id="about" class="section">
-      <div id="my-profile"><h1>my-profile</h1></div>
-      <div id="my-skill"><h1>my-skill</h1></div>
-      <div id="my-eduexp"><h1>my-eduexp</h1></div>
+    <div id="about-skill" class="section">
+      <div id="my-skill">
+        <h2>Skill🔥</h2>
+        <div>
+          <div><img src="pic/html-5.png" alt="" />HTML</div>
+          <div><img src="pic/css-3.png" alt="" />CSS</div>
+          <div><img src="pic/js.png" alt="" />JavaScript</div>
+          <div><img src="pic/python.png" alt="" />Python</div>
+          <div><img src="pic/physics.png" alt="" />React</div>
+          <div><img src="pic/mongoDB.png" alt="" />MongoDB</div>
+          <div><img src="pic/cypress.png" alt="" />Cypress</div>
+          <div><img src="pic/robot.png" alt="" />Robot</div>
+          <div><img src="pic/detox.png" alt="" />Detox</div>
+          <div><img src="pic/jmeter.png" alt="" />JMeter</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-exp" class="section">
+      <div id="my-eduexp"><h2>Experience⚔️</h2></div>
     </div>
 
     <div id="portfolio" class="section">
-      <div id="my-port"><h1>my-port</h1></div>
+      <div id="my-port"><h2>Portfolio📝</h2></div>
     </div>
 
     <div id="contact" class="section">
-      <div id="contact-form"><h1>contact-form</h1></div>
-      <div id="contact-detail"><h1>contact-detail</h1></div>
+      <div id="contact-form"><h2>Contact📥</h2></div>
+      <div id="contact-detail"><h2>contact-detail</h2></div>
     </div>
 
     <script>
@@ -48,34 +76,42 @@
 
       function changeCss() {
         var navHome = document.getElementById("nav-home");
-        var navAbout = document.getElementById("nav-about");
+        var navAboutSkill = document.getElementById("nav-about-skill");
+        var navAboutExp = document.getElementById("nav-about-exp");
         var navPortfolio = document.getElementById("nav-portfolio");
         var navContact = document.getElementById("nav-contact");
 
-        if (this.scrollY <= Math.round(window.innerHeight)) {
+        if (this.scrollY <= Math.round(window.innerHeight * 0.5)) {
           navHome.style.backgroundColor = "#0c0c0c";
-          navAbout.style.backgroundColor = "#2e2e2e";
+          navAboutSkill.style.backgroundColor = "#2e2e2e";
+          navAboutExp.style.backgroundColor = "#2e2e2e";
           navPortfolio.style.backgroundColor = "#2e2e2e";
           navContact.style.backgroundColor = "#2e2e2e";
-        } else if (this.scrollY <= Math.round(window.innerHeight * 2)) {
+        } else if (this.scrollY <= Math.round(window.innerHeight * 1.5)) {
           navHome.style.backgroundColor = "#2e2e2e";
-          navAbout.style.backgroundColor = "#0c0c0c";
+          navAboutSkill.style.backgroundColor = "#0c0c0c";
+          navAboutExp.style.backgroundColor = "#2e2e2e";
           navPortfolio.style.backgroundColor = "#2e2e2e";
           navContact.style.backgroundColor = "#2e2e2e";
-        } else if (this.scrollY <= Math.round(window.innerHeight * 3)) {
+        } else if (this.scrollY <= Math.round(window.innerHeight * 2.5)) {
           navHome.style.backgroundColor = "#2e2e2e";
-          navAbout.style.backgroundColor = "#2e2e2e";
+          navAboutSkill.style.backgroundColor = "#2e2e2e";
+          navAboutExp.style.backgroundColor = "#0c0c0c";
+          navPortfolio.style.backgroundColor = "#2e2e2e";
+          navContact.style.backgroundColor = "#2e2e2e";
+        } else if (this.scrollY <= Math.round(window.innerHeight * 3.5)) {
+          navHome.style.backgroundColor = "#2e2e2e";
+          navAboutSkill.style.backgroundColor = "#2e2e2e";
+          navAboutExp.style.backgroundColor = "#2e2e2e";
           navPortfolio.style.backgroundColor = "#0c0c0c";
           navContact.style.backgroundColor = "#2e2e2e";
-        } else if (this.scrollY <= Math.round(window.innerHeight * 4)) {
+        } else if (this.scrollY <= Math.round(window.innerHeight * 4.5)) {
           navHome.style.backgroundColor = "#2e2e2e";
-          navAbout.style.backgroundColor = "#2e2e2e";
+          navAboutSkill.style.backgroundColor = "#2e2e2e";
+          navAboutExp.style.backgroundColor = "#2e2e2e";
           navPortfolio.style.backgroundColor = "#2e2e2e";
           navContact.style.backgroundColor = "#0c0c0c";
         }
-
-        // ? (navElement.style.opacity = 0.8)
-        // : (navElement.style.opacity = 1);
       }
       window.addEventListener("scroll", changeCss, false);
     </script>

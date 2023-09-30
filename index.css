@@ -1,14 +1,13 @@
 :root {
-  --scroll-thitipongR: 100vh;
-  --scroll-about: 100vh * 2;
-  --scroll-portfolio: 100vh * 3;
-  --scroll-contact: 100vh * 4;
+  --frame-color: #2e2e2e;
+  --bg-color: #0c0c0c;
+  --sub-color: #191919;
 }
 
 body {
-  background-color: #0c0c0c;
+  background-color: var(--bg-color);
   margin: 0px;
-  border: 1px solid #2e2e2e;
+  border: 1px solid var(--frame-color);
   font-family: "Lucida Sans Unicode";
   user-select: none;
 }
@@ -16,41 +15,40 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: #2e2e2e;
-  height: 29pt;
+  background-color: var(--frame-color);
+  height: 65px;
   width: 99%;
   margin: -1px;
   padding: 1px 7px 0px 7pt;
 }
 
 nav div {
-  margin: 0px 1px 0px 0px;
-  height: 10pt;
-  /* width: 164.5pt; */
-  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
   align-self: flex-end;
-  padding: 7px 10px 10px 10px;
-  text-align: left;
-  font-size: 10pt;
+  height: 33px;
+  font-size: 12pt;
   color: #ffffff;
-  /* background-color: #0c0c0c; */
-  background-color: #2e2e2e;
+}
+
+nav div > div {
+  padding: 7px 10px 10px 10px;
+  background-color: var(--frame-color);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  /* border-right: 1px solid #0c0c0c; */
+  width: 100px;
+  justify-content: center;
 }
 
-@media (hover: hover) {
-  nav div:hover {
-    background-color: #191919 !important;
-  }
+nav div:hover {
+  background-color: var(--sub-color) !important;
 }
 
-nav div:first-child {
-  background-color: #0c0c0c;
+#nav-home {
+  background-color: var(--bg-color);
 }
 
 .section {
@@ -68,23 +66,51 @@ nav div:first-child {
   margin-top: -15pt;
 }
 
-#short-descript h1 {
-  font-size: 50pt;
+h1 {
+  font-size: 60pt;
   margin: 2px;
 }
 
-#short-descript h2 {
-  font-size: 25pt;
+h2 {
+  font-size: 35pt;
   margin: 2px;
 }
 
-#short-descript p {
-  font-size: 12pt;
+p {
+  font-size: 18pt;
   margin: 2px;
 }
 
 #pic img {
-  margin-left: 10px;
-  width: 200px;
-  height: 200px;
+  margin-left: 25px;
+  width: 300px;
+  height: 300px;
+}
+
+#about-skill {
+  flex-direction: column;
+}
+#about-skill h2 {
+  border-bottom: 10px solid var(--sub-color);
+}
+
+#about-skill #my-skill div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#about-skill #my-skill div div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 20%;
+}
+
+#about-skill #my-skill div div img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
