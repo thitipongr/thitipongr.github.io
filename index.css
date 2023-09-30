@@ -1,12 +1,57 @@
+:root {
+  --scroll-thitipongR: 100vh;
+  --scroll-about: 100vh * 2;
+  --scroll-portfolio: 100vh * 3;
+  --scroll-contact: 100vh * 4;
+}
+
 body {
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
+  margin: 0px;
+  border: 1px solid #2e2e2e;
+  font-family: "Lucida Sans Unicode";
+  user-select: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  background-color: #2e2e2e;
+  height: 29pt;
+  width: 99%;
+  margin: -1px;
+  padding: 1px 7px 0px 7pt;
+}
+
+nav div {
+  margin: 0px 1px 0px 0px;
+  height: 10pt;
+  /* width: 164.5pt; */
+  /* width: 100%; */
+  align-self: flex-end;
+  padding: 7px 10px 10px 10px;
+  text-align: left;
+  font-size: 10pt;
+  color: #ffffff;
+  /* background-color: #0c0c0c; */
+  background-color: #2e2e2e;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  /* border-right: 1px solid #0c0c0c; */
+}
+
+nav div:hover {
+  background-color: #191919 !important;
 }
 
 .section {
   width: 100%;
   height: 100vh;
   margin: 0px;
-  color: white;
+  color: #cccccc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +73,7 @@ body {
 }
 
 #short-descript p {
-  font-size: 15pt;
+  font-size: 12pt;
   margin: 2px;
 }
 

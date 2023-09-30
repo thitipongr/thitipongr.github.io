@@ -5,6 +5,13 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav>
+      <div onclick="scrollToId(`thitipongR`)" id="nav-home">THITIPONGR</div>
+      <div onclick="scrollToId(`about`)" id="nav-about">ABOUT</div>
+      <div onclick="scrollToId(`portfolio`)" id="nav-portfolio">PORTFOLIO</div>
+      <div onclick="scrollToId(`contact`)" id="nav-contact">CONTACT</div>
+    </nav>
+
     <div id="thitipongR" class="section">
       <div id="short-descript">
         <h2>Hi there✋, I'am Oom</h2>
@@ -16,14 +23,6 @@
       <div id="pic">
         <img alt="My Photo" src="picture.jpg" />
       </div>
-    </div>
-    <div id="nav-bar" class="nav-bar">
-      <ul>
-        <li><a href="#thitipongR">ThitipongR</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
     </div>
 
     <div id="about" class="section">
@@ -40,6 +39,45 @@
       <div id="contact-form"><h1>contact-form</h1></div>
       <div id="contact-detail"><h1>contact-detail</h1></div>
     </div>
+
+    <script>
+      function scrollToId(id) {
+        const toSection = document.getElementById(id);
+        toSection.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function changeCss() {
+        var navHome = document.getElementById("nav-home");
+        var navAbout = document.getElementById("nav-about");
+        var navPortfolio = document.getElementById("nav-portfolio");
+        var navContact = document.getElementById("nav-contact");
+
+        if (this.scrollY <= Math.round(window.innerHeight)) {
+          navHome.style.backgroundColor = "#0c0c0c";
+          navAbout.style.backgroundColor = "#2e2e2e";
+          navPortfolio.style.backgroundColor = "#2e2e2e";
+          navContact.style.backgroundColor = "#2e2e2e";
+        } else if (this.scrollY <= Math.round(window.innerHeight * 2)) {
+          navHome.style.backgroundColor = "#2e2e2e";
+          navAbout.style.backgroundColor = "#0c0c0c";
+          navPortfolio.style.backgroundColor = "#2e2e2e";
+          navContact.style.backgroundColor = "#2e2e2e";
+        } else if (this.scrollY <= Math.round(window.innerHeight * 3)) {
+          navHome.style.backgroundColor = "#2e2e2e";
+          navAbout.style.backgroundColor = "#2e2e2e";
+          navPortfolio.style.backgroundColor = "#0c0c0c";
+          navContact.style.backgroundColor = "#2e2e2e";
+        } else if (this.scrollY <= Math.round(window.innerHeight * 4)) {
+          navHome.style.backgroundColor = "#2e2e2e";
+          navAbout.style.backgroundColor = "#2e2e2e";
+          navPortfolio.style.backgroundColor = "#2e2e2e";
+          navContact.style.backgroundColor = "#0c0c0c";
+        }
+
+        // ? (navElement.style.opacity = 0.8)
+        // : (navElement.style.opacity = 1);
+      }
+      window.addEventListener("scroll", changeCss, false);
+    </script>
   </body>
 </html>
-<!--  -->
