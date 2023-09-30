@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #0C0C0C;
 }
 
 .section {
@@ -7,4 +7,33 @@ body {
   height: 100vh;
   margin: 0px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#short-descript {
+  text-align: right;
+  margin-top: -15pt;
+}
+
+#short-descript h1 {
+  font-size: 50pt;
+  margin: 2px;
+}
+
+#short-descript h2 {
+  font-size: 25pt;
+  margin: 2px;
+}
+
+#short-descript p {
+  font-size: 15pt;
+  margin: 2px;
+}
+
+#pic img {
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
 }
