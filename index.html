@@ -3,14 +3,15 @@
   <head>
     <title>ThitipongR's Portfolio</title>
     <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav>
-      <div>
+      <div id="nav-main">
         <div onclick="scrollToId(`thitipongR`)" id="nav-home">ThitipongR</div>
       </div>
 
-      <div>
+      <div id="nav-menu">
         <div onclick="scrollToId(`about-skill`)" id="nav-about-skill">
           SKILL
         </div>
@@ -52,7 +53,7 @@
         <div><img src="pic/jmeter.png" alt="" />JMeter</div>
       </div>
     </div>
-
+    
     <div id="about-exp" class="section">
       <h2>Experience⚔️</h2>
       <div class="time-container">
@@ -114,7 +115,7 @@
       </div>
       <h3>📧 thitipong.r.psn@gmail.com</h3>
       <h3>📞 0-9947-61548</h3>
-    </div>
+    </div> 
 
     <script>
       function scrollToId(id) {
