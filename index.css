@@ -335,6 +335,84 @@ body {
     margin-bottom: 25px;
   }
 }
+@media (min-height: 740px) {
+  #short-descript {
+    margin-bottom: 90px;
+  }
+
+  #about-skill div,
+  #about-exp div {
+    margin-bottom: 50px;
+  }
+
+  #portfolio div {
+    margin-bottom: 20px;
+  }
+
+  #contact h3:last-child {
+    margin-bottom: 70px;
+  }
+}
+@media (min-height: 844px) {
+  #short-descript {
+    margin-bottom: 150px;
+  }
+
+  #about-skill div,
+  #about-exp div,
+  #contact h3:last-child {
+    margin-bottom: 120px;
+  }
+
+  #portfolio div {
+    margin-bottom: 50px;
+  }
+}
+@media (height: 1180px) and (width: 820px) {
+  #short-descript {
+    margin-bottom: 300px;
+  }
+
+  #about-skill div,
+  #about-exp div,
+  #contact h3:last-child {
+    margin-bottom: 270px;
+  }
+
+  #portfolio div {
+    margin-bottom: 120px;
+  }
+}
+@media (height: 1024px) and (width: 768px) {
+  #short-descript {
+    margin-bottom: 300px;
+  }
+
+  #about-skill div,
+  #about-exp div,
+  #contact h3:last-child {
+    margin-bottom: 270px;
+  }
+
+  #portfolio div {
+    margin-bottom: 90px;
+  }
+}
+@media (height: 1368px) and (width: 912px) {
+  #short-descript {
+    margin-bottom: 450px;
+  }
+
+  #about-skill div,
+  #about-exp div,
+  #contact h3:last-child {
+    margin-bottom: 400px;
+  }
+
+  #portfolio div {
+    margin-bottom: 190px;
+  }
+}
 @media (min-width: 1024px) {
   nav {
     flex-direction: row;
