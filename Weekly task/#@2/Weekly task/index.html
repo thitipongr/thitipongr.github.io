@@ -15,17 +15,19 @@
     <nav>
       <div class="container">
         <div class="nav-con">
-          <div class="logo">
+          <div class="logo" onclick="menuExpand()">
             <a href="#"> <i class="fa-solid fa-blog"> </i> Blog Platform </a>
           </div>
-          <ul class="menu">
+          <ul class="menu" id="nav-menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Create Blog</a></li>
-            <a href="#" id="icon-search"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
-            <input type="text" class="nav-search-box" />
+            <div>
+              <a href="#" id="icon-search"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <input type="text" class="nav-search-box" />
+            </div>
             <div>
               <button class="nav-login-btn">Log in</button>
               <button class="nav-signup-btn">Sign up</button>
@@ -35,5 +37,16 @@
       </div>
     </nav>
     <main></main>
+    <script>
+      const menuExpand = () => {
+        const menuList = document.getElementById("nav-menu");
+        console.log(menuList.style);
+        if (menuList.style.display !== "flex") {
+          menuList.style.display = "flex";
+        } else {
+          menuList.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

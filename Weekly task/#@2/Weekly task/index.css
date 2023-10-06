@@ -16,7 +16,114 @@ body {
   background-color: var(--bg-color);
 }
 
-.container {
+@media (max-width: 320px) or (min-width: 320px) {
+  .container {
+    min-width: 80%;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: var(--frame-color);
+  }
+
+  .nav-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    color: var(--content-text-color);
+    text-decoration: none;
+    pointer-events: none;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 2rem;
+    border-top: 1px solid var(--sub-color);
+    width: 100%;
+  }
+
+  .menu li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu li a {
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+    color: var(--content-text-color);
+    text-decoration: none;
+  }
+
+  .menu input {
+    border-radius: 10px;
+    border: 0px;
+    padding: 0.5rem;
+    height: 35px;
+    width: 100%;
+  }
+
+  .menu input:focus {
+    border: 0px;
+    outline: none;
+  }
+
+  #icon-search {
+    z-index: 0;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    text-decoration: none;
+    color: var(--frame-color);
+  }
+
+  .nav-search-box {
+    margin-left: -1.5rem;
+    padding-left: 2rem !important;
+    font-size: 1rem;
+    background-color: var(--sub-color);
+    color: var(--content-text-color);
+  }
+
+  .menu div {
+    display: flex;
+    width: 100%;
+  }
+
+  .menu div button {
+    font-size: 1.25rem;
+    height: 35px;
+    border: 0.2rem solid var(--content-text-color);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .nav-login-btn {
+    background-color: var(--frame-color);
+    color: var(--content-text-color);
+  }
+
+  .nav-signup-btn {
+    margin-left: 0.2rem;
+    background-color: var(--content-text-color);
+    color: var(--frame-color);
+  }
+}
+
+/* .container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -106,4 +213,4 @@ nav {
    margin-left: 0.2rem;
   background-color: var(--content-text-color);
   color: var(--frame-color);
-}
+} */
