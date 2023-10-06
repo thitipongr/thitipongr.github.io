@@ -16,12 +16,12 @@ body {
   background-color: var(--bg-color);
 }
 
-@media (max-width: 320px) or (min-width: 320px) {
-  .container {
-    min-width: 80%;
-    margin: 0 auto;
-  }
+.container {
+  min-width: 80%;
+  margin: 0 auto;
+}
 
+@media (max-width: 425px) or (min-width: 425px) {
   nav {
     display: flex;
     align-items: center;
@@ -123,10 +123,20 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  /* for display 2 blog in row */
+}
+
+@media (min-width: 1024px) {
+  /* for change nav-bar style */
+}
+
 /* .container {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+
 
 nav {
   display: flex;
