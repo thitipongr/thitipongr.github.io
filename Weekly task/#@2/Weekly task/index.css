@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  min-width: 80%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -206,11 +206,22 @@ footer {
     padding: 0 0.5rem;
     margin-right: 0.5rem;
   }
+
+  .pagination-laptop-con {
+    display: none;
+  }
+
+  .pagination-con {
+    margin: 2rem 0;
+  }
+
+  .pagination-mobile-con {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
-  /* for display 2 blog in row */
-
   .hero-info-detail-subdetail-con,
   .hero-info-contegory-label {
     display: block;
@@ -287,8 +298,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  /* for change nav-bar style */
-
   .nav-con {
     flex-direction: row;
   }
@@ -346,6 +355,23 @@ footer {
   .main-blog-list-con {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
+  }
+
+  .pagination-mobile-con {
+    display: none;
+  }
+
+  .pagination-laptop-previous i {
+    margin-right: 0.5rem;
+  }
+
+  .pagination-laptop-next i {
+    margin-left: 0.5rem;
+  }
+
+  .pagination-laptop-con {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
