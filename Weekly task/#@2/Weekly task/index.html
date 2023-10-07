@@ -40,12 +40,18 @@
     <script>
       const menuExpand = () => {
         const menuList = document.getElementById("nav-menu");
-        console.log(menuList.style);
-        if (menuList.style.display !== "flex") {
-          menuList.style.display = "flex";
+        console.log(menuList.className);
+        if (menuList.className === "menu") {
+          menuList.className += " menu-display";
         } else {
-          menuList.style.display = "none";
+          menuList.className = "menu";
         }
+
+        // if (menuList.style.display !== "flex") {
+        //   menuList.style.display = "flex";
+        // } else {
+        //   menuList.style.display = "none";
+        // }
       };
     </script>
   </body>

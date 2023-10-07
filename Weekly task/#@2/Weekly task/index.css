@@ -25,7 +25,6 @@ body {
   nav {
     display: flex;
     align-items: center;
-    padding: 2rem 0;
     background-color: var(--frame-color);
   }
 
@@ -34,6 +33,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .logo {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--sub-color);
+    width: 100%;
+    text-align: center;
   }
 
   .logo a {
@@ -49,9 +55,11 @@ body {
     list-style: none;
     align-items: center;
     margin-bottom: 0px;
-    margin-top: 2rem;
-    border-top: 1px solid var(--sub-color);
     width: 100%;
+  }
+
+  .menu-display {
+    display: flex;
   }
 
   .menu li {
@@ -109,6 +117,7 @@ body {
     border-radius: 10px;
     width: 100%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .nav-login-btn {
@@ -129,14 +138,62 @@ body {
 
 @media (min-width: 1024px) {
   /* for change nav-bar style */
+
+  .nav-con {
+    flex-direction: row;
+  }
+
+  .logo {
+    border-bottom: 0px;
+    width: auto;
+    text-align: left;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+
+  .menu li {
+    margin: 0 1rem;
+    width: auto;
+  }
+
+  .menu li a {
+    width: auto;
+  }
+
+  .menu input {
+    min-width: 100px;
+    width: 100px;
+  }
+
+  .nav-search-box {
+    margin-right: 1rem;
+  }
+
+  .menu div {
+    width: auto;
+  }
+
+  .menu div button {
+    min-width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu input {
+    width: 100%;
+  }
 }
 
 /* .container {
   max-width: 1440px;
   margin: 0 auto;
 }
-
-
 
 nav {
   display: flex;
