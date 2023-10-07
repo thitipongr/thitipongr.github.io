@@ -195,6 +195,69 @@ footer {
 
 @media (min-width: 768px) {
   /* for display 2 blog in row */
+
+  .hero-info-detail-subdetail-con,
+  .hero-info-contegory-label {
+    display: block;
+  }
+
+  .hero-img img {
+    height: 400px;
+    margin-bottom: -9rem;
+  }
+
+  .hero-info-con {
+    position: relative;
+    background-color: #2e2e2ebb;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    backdrop-filter: blur(10px);
+  }
+
+  .hero-info-article {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+  .hero-info-writer-detail-label,
+  .hero-info-publihed-lable,
+  .hero-info-contegory-label {
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-info-detail-con,
+  .hero-info-detail-subdetail-con {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-info-detail-maindetail-con {
+    display: none;
+  }
+
+  .hero-info-writer-detail-info-con {
+    display: flex;
+  }
+
+  .hero-info-writer-detail-label {
+    font-weight: bolder;
+  }
+
+  .hero-info-writer-detail-info-pic img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border: 2px solid var(--content-text-color);
+    border-radius: 50%;
+    margin-right: 0.25rem;
+  }
+
+  .hero-info-publihed-con {
+    margin-left: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
