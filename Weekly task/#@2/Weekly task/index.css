@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lucida Sans Unicode";
+  color: var(--content-text-color);
 }
 
 body {
@@ -19,6 +20,17 @@ body {
 .container {
   min-width: 80%;
   margin: 0 auto;
+}
+
+header {
+  border-top: 10px solid var(--sub-color);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+footer {
+  border-top: 10px solid var(--sub-color);
 }
 
 @media (max-width: 425px) or (min-width: 425px) {
@@ -37,29 +49,31 @@ body {
 
   .logo {
     padding: 2rem 0;
-    border-bottom: 1px solid var(--sub-color);
     width: 100%;
     text-align: center;
   }
 
   .logo a {
     font-size: 1.5rem;
-    color: var(--content-text-color);
     text-decoration: none;
     pointer-events: none;
   }
 
   .menu {
+    border-top: 1px solid var(--sub-color);
     display: none;
     flex-direction: column;
     list-style: none;
     align-items: center;
     margin-bottom: 0px;
     width: 100%;
+    background-color: var(--frame-color);
   }
 
   .menu-display {
     display: flex;
+    position: absolute;
+    margin: 92px;
   }
 
   .menu li {
@@ -72,7 +86,6 @@ body {
     display: block;
     width: 100%;
     font-size: 1.25rem;
-    color: var(--content-text-color);
     text-decoration: none;
   }
 
@@ -102,12 +115,11 @@ body {
     padding-left: 2rem !important;
     font-size: 1rem;
     background-color: var(--sub-color);
-    color: var(--content-text-color);
   }
 
   .menu div {
     display: flex;
-    width: 100%;
+    width: 80%;
   }
 
   .menu div button {
@@ -122,13 +134,62 @@ body {
 
   .nav-login-btn {
     background-color: var(--frame-color);
-    color: var(--content-text-color);
   }
 
   .nav-signup-btn {
     margin-left: 0.2rem;
     background-color: var(--content-text-color);
     color: var(--frame-color);
+  }
+
+  main {
+    margin-top: 122px;
+  }
+
+  main h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--content-text-color);
+    margin-bottom: 2rem;
+  }
+
+  .hero-info-detail-subdetail-con,
+  .hero-info-contegory-label {
+    display: none;
+  }
+
+  .hero-con {
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid var(--content-text-color);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .hero-info-article {
+    font-weight: bolder;
+  }
+
+  .hero-info-detail-maindetail {
+    margin: 1rem 0;
+  }
+
+  .hero-info-contegory-info-con {
+    display: flex;
+  }
+
+  .hero-info-contegory-info {
+    border: 1px solid var(--content-text-color);
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -144,15 +205,21 @@ body {
   }
 
   .logo {
-    border-bottom: 0px;
     width: auto;
     text-align: left;
   }
 
   .menu {
+    border-top: 0px;
     display: flex;
     flex-direction: row;
     width: auto;
+  }
+
+  .menu-display {
+    display: flex;
+    position: static;
+    margin: 0px;
   }
 
   .menu li {
