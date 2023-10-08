@@ -242,6 +242,10 @@ footer {
     display: none;
   }
 
+  .blog-view-main a{
+    text-decoration: none;
+  }
+
   .blog-view-info-detail-intro-writer-pic img,
   .blog-view-comment-item-label-img img,
   .blog-view-comment-box-img img {
@@ -267,6 +271,10 @@ footer {
     font-size: 0.9rem;
     line-height: 1.5;
     align-items: center;
+  }
+
+  .blog-view-info-detail-intro-writer-published-group-dot {
+    display: none;
   }
 
   .blog-view-info-detail-intro-writer-name-text,
@@ -363,6 +371,10 @@ footer {
     padding-top: 0.25rem;
   }
 
+  .blog-view-comment-box-input {
+    width: 100%;
+  }
+
   .comment-box {
     margin-right: -1.5rem;
     padding-right: 2rem !important;
@@ -375,7 +387,7 @@ footer {
     width: 100%;
   }
 
-  .blog-view-comment-box-con{
+  .blog-view-comment-box-con {
     margin-bottom: 2rem;
   }
 }
@@ -475,6 +487,20 @@ footer {
   .footer-policy div {
     margin: 0 0.5rem;
   }
+
+  .blog-view-info-cover img {
+    height: 400px;
+  }
+
+  .blog-view-info-detail-intro-writer-published-con,
+  .blog-view-info-detail-intro-writer-published-group,
+  .blog-view-info-detail-intro-writer-published-group-dot {
+    display: flex;
+  }
+
+  .blog-view-info-detail-intro-writer-published-group-dot {
+    margin: 0 0.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -528,7 +554,8 @@ footer {
     margin-bottom: auto;
   }
 
-  .hero-img img {
+  .hero-img img,
+  .blog-view-info-cover img {
     height: 500px;
   }
 
@@ -560,7 +587,8 @@ footer {
     width: 100%;
   }
 
-  .hero-img img {
+  .hero-img img,
+  .blog-view-info-cover img {
     height: 600px;
   }
 
