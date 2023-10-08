@@ -240,8 +240,8 @@ footer {
   }
 
   .blog-view-info-detail-intro-writer-pic img {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     object-fit: cover;
     border: 2px solid var(--content-text-color);
     border-radius: 50%;
@@ -255,7 +255,9 @@ footer {
   .blog-view-info-detail-intro-writer-con,
   .blog-view-info-detail-intro-writer-name-con,
   .blog-view-info-detail-intro-writer-published-group-con,
-  .blog-view-info-detail-intro-writer-published-date-con {
+  .blog-view-info-detail-intro-writer-published-date-con,
+  .blog-view-writer-group,
+  .blog-view-writer-intro {
     display: flex;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -285,6 +287,50 @@ footer {
     padding-left: 3.5rem;
     margin: 2rem 0;
     line-height: 1.5;
+  }
+
+  .blog-view-writer{
+    background-color: var(--sub-color);
+    padding: 2rem 0;
+  }
+
+  .blog-view-writer-action-con {
+    display: flex;
+  }
+
+  .blog-view-writer-pic img {
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border: 2px solid var(--content-text-color);
+    border-radius: 50%;
+    margin: auto 0;
+  }
+
+  .blog-view-writer-action-btn {
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 2rem;
+    background-color: var(--frame-color);
+    padding: 1rem;
+  }
+
+  .blog-view-writer-action {
+    margin: auto 0;
+    margin-left: 1rem;
+  }
+
+  .blog-view-writer-name {
+    display: flex;
+    font-size: 0.85rem;
+  }
+
+  .blog-view-writer-name h2,
+  .blog-view-writer-group-follow,
+  .blog-view-writer-group-content,
+  .blog-view-writer-intro {
+    margin-right: 0.4rem;
+    margin-top: 1rem;
   }
 }
 
