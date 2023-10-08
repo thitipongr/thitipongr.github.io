@@ -147,6 +147,7 @@ footer {
 
   main {
     margin-top: 122px;
+    min-height: calc(100vh - 62px - 122px - 2rem);
   }
 
   main h1 {
@@ -170,7 +171,8 @@ footer {
   }
 
   .hero-img img,
-  .main-blog-list-img img {
+  .main-blog-list-img img,
+  .blog-view-info-cover img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -180,7 +182,8 @@ footer {
     border-bottom-left-radius: 20px;
   }
 
-  .main-blog-list-img img {
+  .main-blog-list-img img,
+  .blog-view-info-cover img {
     margin-top: 2rem;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -234,6 +237,54 @@ footer {
 
   .footer-policy {
     display: none;
+  }
+
+  .blog-view-info-detail-intro-writer-pic img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid var(--content-text-color);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+  .blog-view-info-detail-intro-writer-con {
+    margin: 2rem 0;
+  }
+
+  .blog-view-info-detail-intro-writer-con,
+  .blog-view-info-detail-intro-writer-name-con,
+  .blog-view-info-detail-intro-writer-published-group-con,
+  .blog-view-info-detail-intro-writer-published-date-con {
+    display: flex;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    align-items: center;
+  }
+
+  .blog-view-info-detail-intro-writer-name-text,
+  .blog-view-info-detail-intro-writer-name-text a,
+  .blog-view-info-detail-intro-writer-published-label,
+  .blog-view-info-detail-intro-writer-published-readtime {
+    margin-right: 0.25rem;
+  }
+
+  .blog-view-info-detail-intro-writer-published-date {
+    margin-left: 0.25rem;
+  }
+
+  .blog-view-info-detail-content-con p {
+    text-indent: 2rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+  }
+
+  .blog-view-info-detail-content-con ul,
+  .blog-view-info-detail-content-con ol,
+  .blog-view-info-detail-content-con dl {
+    padding-left: 3.5rem;
+    margin: 2rem 0;
+    line-height: 1.5;
   }
 }
 
