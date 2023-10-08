@@ -100,7 +100,9 @@ footer {
     width: 100%;
   }
 
-  .menu input:focus,
+  input:focus,
+  select:focus,
+  textarea:focus,
   .comment-box:focus {
     border: 0px;
     outline: none;
@@ -126,7 +128,8 @@ footer {
     width: 80%;
   }
 
-  .menu div button {
+  .menu div button,
+  .create-blog-main button {
     font-size: 1.25rem;
     height: 35px;
     border: 0.2rem solid var(--content-text-color);
@@ -136,11 +139,13 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .nav-login-btn {
+  .nav-login-btn,
+  .create-blog-public-btn {
     background-color: var(--frame-color);
   }
 
-  .nav-signup-btn {
+  .nav-signup-btn,
+  .create-blog-draft-btn {
     margin-left: 0.2rem;
     background-color: var(--content-text-color);
     color: var(--frame-color);
@@ -242,7 +247,7 @@ footer {
     display: none;
   }
 
-  .blog-view-main a{
+  .blog-view-main a {
     text-decoration: none;
   }
 
@@ -389,6 +394,39 @@ footer {
 
   .blog-view-comment-box-con {
     margin-bottom: 2rem;
+  }
+
+  .create-blog-con {
+    margin-bottom: 2rem;
+  }
+
+  .create-blog-con div {
+    margin: 2rem 0;
+  }
+
+  .create-blog-con h2 {
+    margin: 0.5rem 0;
+  }
+
+  .create-blog-con div input,
+  .create-blog-con div select,
+  .create-blog-con div textarea {
+    font-size: 1rem;
+    background-color: var(--sub-color);
+    border-radius: 10px;
+    border: 0px;
+    padding: 0.5rem;
+    height: 35px;
+    width: 100%;
+  }
+
+  .create-blog-con div textarea {
+    height: 200px;
+    resize: none;
+  }
+
+  .create-blog-main button {
+    margin: 0.5rem 0;
   }
 }
 
@@ -579,6 +617,19 @@ footer {
   .pagination-laptop-con {
     display: flex;
     justify-content: space-between;
+  }
+
+  .create-blog-con div textarea {
+    height: 25vh;
+  }
+
+  .create-blog-button-con {
+    display: flex;
+  }
+
+  .create-blog-button-con button {
+    max-width: 250px;
+    margin-right: 0.5rem;
   }
 }
 
